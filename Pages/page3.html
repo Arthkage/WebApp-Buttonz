@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Third Page</title>
+		<link rel="stylesheet" type="text/css" href="../Css/css.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script> 
+			$(document).ready(function(){
+				$("#patrat").animate({left: '400px'},function(){
+					$("#patrat").animate({
+					top: '400px',
+					height: '150px',
+					width:'150px'},function(){
+						$("#patrat").animate({left: '0px'},function(){
+							$("#patrat").animate({
+							top: '0px',
+							height: '60px',
+							width:'60px'},function(){
+							$("#patrat").fadeOut(1000, function(){
+				$("#frm").fadeIn(1500); 
+				$("#btnSuma").click(function(){
+					var sum= 0;
+					sum = parseInt($("#a").val()) + parseInt($("#b").val());
+					$("#suma").val(sum);
+				 });
+				});
+			   });
+		      });
+			});
+		});	
+		});
+			
+			
+			
+		</script> 
+		
+	</head>
+	<body>
+	 <div align="center">
+		<input type="button" value="B1" id="btn1" onclick="location.href='../index.html'">
+		<input type="button" value="B2" id="btn2" onclick="location.href='page2.html'">
+		<input type="button" value="B3" id="btn3" onclick="location.href='#'">
+		<input type="button" value="B4" id="btn4" onclick="location.href='page4.html'">
+		</div><br>
+		
+		<div id="patrat" align="left" style="background:#000000; height:60px; width:60px; position:relative;">
+		</div>
+		<table id="frm" align="center" border="0" style="display: none;" >
+			<tr>
+
+				<form>
+				<td>
+			Primul Numar:
+				</td>
+				<td>
+				<input type="text" value=" " id="a"></th><br>
+				</td>
+			</tr>
+			<tr>
+			<td>
+			Al doilea Numar:
+			</td>
+				<td>
+				<input type="text" value=" " id="b"></td><br>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2" align="center">
+				<input type="button" value="B6" id="btnSuma"></td><br><br>
+				
+			</tr>
+			<tr>
+			<td>
+			Suma este:
+			</td>
+				<td>
+				<input align="center" type="text" id="suma"><br>
+				</td>
+			</tr>
+			</form>
+		</table>
+		</div>
+		
+	</body>
+</html>

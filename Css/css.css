@@ -1,0 +1,28 @@
+#tabel{
+	
+	margin: 0;
+	padding: 20px 100px 10px 100px;
+	
+}
+#btn1:hover,#btn2:hover,#btn3:hover,#btn4:hover{
+
+	background-color:green;
+	color: yellow;
+	
+}
+#btn5:hover,#btnSuma:hover{
+
+	background-color: red;
+}
+#youtube:hover,#gmaps:hover{
+
+	background:magenta;
+	color:white;
+}
+
+#btn1:active,#btn2:active,#btn3:active,#btn4:active{
+
+	background-color:black;
+	color: white;
+	
+}
